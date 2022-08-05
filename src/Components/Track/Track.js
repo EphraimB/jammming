@@ -21,3 +21,5 @@ class Track extends React.Component {
         )
     }
 }
+
+export default Track;
