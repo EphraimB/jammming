@@ -4,7 +4,7 @@ class Track extends React.Component {
     renderAction() {
         return (
             <button className="Track-action">
-               { isRemoval ? '-' : '+' }
+               { this.isRemoval ? '-' : '+' }
             </button>
         )
     }
