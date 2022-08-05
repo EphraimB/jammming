@@ -1,5 +1,5 @@
 import React from "react";
-import { TrackList } from './TrackList';
+import { TrackList } from '../TrackList/TrackList';
 
 export class PlayList extends React.Component {
     render() {
