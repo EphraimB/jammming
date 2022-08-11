@@ -1,5 +1,3 @@
-import SearchBar from "../Components/SearchBar/SearchBar";
-
 const clientId = 'ab3a162d5b484ef8b44ee9815fa99689';
 const redirectUri = "http://localhost:3000/";
 let accessToken;
@@ -23,6 +21,7 @@ const Spotify = {
             return accessToken;
         } else {
             const accessUrl = `https://accounts.spotify.com/authorize?client_id=${clientId}&response_type=token&scope=playlist-modify-public&redirect_uri=${redirectUri}`;
+            window.location = accessUrl;
         }
     },
     
@@ -74,9 +73,9 @@ const Spotify = {
                     headers: headers,
                     method: 'POST',
                     body: JSON.stringify({ uris: trackUris})
-                });
-            });
-        });
+                })
+            })
+        })
     }
 };
 
