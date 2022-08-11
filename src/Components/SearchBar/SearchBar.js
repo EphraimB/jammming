@@ -10,7 +10,7 @@ export class SearchBar extends React.Component {
     }
 
     handleTermChange(event) {
-        this.setState({ term: event.target });
+        this.setState({ term: event.target.value });
     }
 
     search() {
